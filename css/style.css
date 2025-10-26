@@ -10,9 +10,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    padding: 0 2rem;
 
 }
-
+.main-header-menu-icon{
+    position: absolute;
+    left: 1rem;
+    width: 4vw;
+    height: auto;
+}
+.main-header-menu-icon img{
+    width: 100%;
+    height: auto;
+}
 #main-container {
     display: flex;
     height: 100vh;
@@ -33,11 +44,11 @@
     height: 100vh;
     background-color: black;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px;
+    padding: 2rem;
+    gap: 2rem;
     overflow-y: auto;
 }
 
@@ -45,4 +56,8 @@
     width: 35vw;
     height: 45vh;
     background-color: blue;
+}
+
+#main-footer{
+    background-color: aquamarine;
 }
