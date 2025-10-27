@@ -36,6 +36,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     background-color: white;
+    position: relative;
 
 }
 
@@ -50,14 +51,20 @@
     padding: 2rem;
     gap: 2rem;
     overflow-y: auto;
+    
 }
 
 .main-container-right-cotent {
-    width: 35vw;
-    height: 45vh;
-    background-color: blue;
+    width: 40vw;
+    height: 55vh;
+    background-color: grey;
+    border-radius: 1rem;
 }
 
 #main-footer{
     background-color: aquamarine;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
