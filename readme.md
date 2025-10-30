@@ -25,7 +25,7 @@ Main goals:
 
 ---
 
-## 📱 Features
+## Features
 
 - Responsive design for desktop, tablet, and mobile screens.  
 - Image gallery of river fish species.  
@@ -40,16 +40,3 @@ Main goals:
 
 ---
 
-##  Future Improvements
-
-- Add dynamic content loading using JavaScript.  
-- Implement filters by continent or habitat.  
-- Include species information cards with animations or hover effects.  
-- Expand the image gallery and improve accessibility features.
-
----
-
-## License
-
-This project was created for educational purposes.  
-You are free to explore, learn, and adapt the structure for non-commercial use.
