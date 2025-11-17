@@ -30,49 +30,9 @@
     height: 80vh;
 }
 
-.main-container-left {
-    width: 5vw;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: white;
 
-}
-
-.main-container-left-icon1 {
-    width: 80%;
-    height: 80%;
-}
-
-.main-container-left-icon1 img {
+.main-container{
     width: 100%;
-    height: auto;
-}
-
-.main-container-left-icon2 {
-    width: 80%;
-    height: 80%;
-}
-
-.main-container-left-icon2 img {
-    width: 100%;
-    height: auto;
-}
-
-.main-container-left-icon3 {
-    width: 80%;
-    height: 80%;
-}
-
-.main-container-left-icon3 img {
-    width: 100%;
-    height: auto;
-}
-
-.main-container-right {
-    width: 95vw;
     height: 100%;
     background-color: black;
     display: flex;
