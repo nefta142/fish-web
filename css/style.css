@@ -25,15 +25,38 @@
     height: auto;
 }
 
+.main-header-nav-var-user {
+    position: absolute;
+    right: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.main-header-nav-var-user-login{
+    color: black;
+    background-color: rgb(243, 211, 211);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.main-header-nav-var-user-register{
+    color: white;
+    background-color: rgb(36, 34, 34);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
 #main-container {
     display: flex;
-    height: 80vh;
+    min-height: 80vh;
 }
 
 
 .main-container{
     width: 100%;
-    height: 100%;
     background-color: black;
     display: flex;
     flex-wrap: wrap;
@@ -41,12 +64,11 @@
     align-items: center;
     padding: 1rem;
     gap: 1rem;
-    overflow-y: auto;
 
 }
 
 
-.main-container-right-content {
+.main-container-content {
     width: 27vw;
     height: 37vh;
     background-color: grey;
@@ -54,18 +76,18 @@
     overflow: hidden;
 }
 
-.main-container-right-content-image{
+.main-container-content-image{
     width: 100%;
     height: 45%;
 }
 
-.main-container-right-content-image img{
+.main-container-content-image img{
     width: 100%;
     height: 60%;
     object-fit: cover;
 }
 
-.main-container-right-content p{
+.main-container-content p{
     color: white;
     text-align: center;
     padding: 0.5rem;
@@ -83,7 +105,7 @@
 
 
 @media only screen and (max-width: 768px) {
-        .main-header-nav-var {
+.main-header-nav-var {
         display: block;
         position: absolute;
         right: 1rem;
@@ -94,20 +116,23 @@
         width: 100%;
         height: auto;
     }
-    
-    .main-container-left {
+
+    /* Ocultar botones de usuario en móvil */
+    .main-header-nav-var-user {
         display: none;
     }
-    .main-container-right {
+
+    /* Ajustes main */
+    .main-container {
         width: 100vw;
     }
 
-    .main-container-right-content {
-    width: 80vw;
-    height: 75vh;
-    background-color: grey;
-    border-radius: 1rem;
-}
+    .main-container-content {
+        width: 80vw;
+        height: 75vh;
+        background-color: grey;
+        border-radius: 1rem;
+    }
 }
 
 
@@ -126,13 +151,10 @@
         height: auto;
     }
     
-    .main-container-left {
-        display: none;
-    }
-    .main-container-right {
+    .main-container {
         width: 100vw;
     }
-    .main-container-right-content {
+    .main-container-content {
     width: 40vw;
     height: 50vh;
     background-color: grey;
@@ -141,10 +163,6 @@
 }
 
 @media only screen and (min-width: 992px){
-
-    .main-container-left {
-        display: flex;
-    }
 
     .main-header-nav-var {
         display: none;
