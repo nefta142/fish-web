@@ -62,7 +62,8 @@ body {
 }
 
 #main-form-user input[type="text"],
-#main-form-user input[type="email"] {
+#main-form-user input[type="email"],
+ #main-form-user input[type="number"]{
   padding: 0.8rem;
   margin-top: 0.3rem;
   border-radius: 0.5rem;
@@ -83,11 +84,12 @@ body {
 #main-form-user input[type="submit"]:hover {
   background-color: #2a82c4;
 }
-
-
-#login-message {
-  margin-top: 1rem;
-  min-height: 2rem;
+.main-user-title{
   text-align: center;
-  color: red;
+  margin-top: 2rem;
+}
+#users-list{
+  margin-top: 3rem;
+  padding-left: 3rem;
+  list-style: none;
 }
