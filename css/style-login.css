@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .main-header {
   background-color: #f0f8ff;
   height: 10vh;
@@ -40,7 +41,7 @@ body {
 }
 
 #main-form-user {
-  margin-top: 2rem; 
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -63,7 +64,7 @@ body {
 
 #main-form-user input[type="text"],
 #main-form-user input[type="email"],
- #main-form-user input[type="number"]{
+#main-form-user input[type="number"] {
   padding: 0.8rem;
   margin-top: 0.3rem;
   border-radius: 0.5rem;
@@ -84,11 +85,13 @@ body {
 #main-form-user input[type="submit"]:hover {
   background-color: #2a82c4;
 }
-.main-user-title{
+
+.main-user-title {
   text-align: center;
   margin-top: 2rem;
 }
-#users-list{
+
+#users-list {
   margin-top: 3rem;
   padding-left: 3rem;
   list-style: none;
