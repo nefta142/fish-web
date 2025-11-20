@@ -68,4 +68,26 @@ const MENU_ICON = document.querySelector(".bi-list");
 const MENU_CONTAINER = document.querySelector(".main-header-nav-var");
 new BurgerMenu(MENU_ICON, MENU_CONTAINER);
 
+document.addEventListener("DOMContentLoaded", () => {
+    class ImageHoverEffect {
+        constructor() {
+            this.images = document.querySelectorAll(".main-container-content-image img");
+            this.addHoverEffect();
+        }
+
+        addHoverEffect() {
+            this.images.forEach(img => {
+                img.style.transition = "transform 0.3s ease";
+                img.addEventListener("mouseenter", () => {
+                    img.style.transform = "scale(1.1)";
+                });
+                img.addEventListener("mouseleave", () => {
+                    img.style.transform = "scale(1)";
+                });
+            });
+        }
+    }
+
+    new ImageHoverEffect();
+});
 
