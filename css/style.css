@@ -110,11 +110,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;
 }
 
 .main-footer-github {
   order: 1;
+  border-left: 1rem;
 }
 
 .main-footer-github i {
@@ -165,6 +165,9 @@
   }
 
   .main-footer-title {
+    display: none;
+  }
+  .main-footer-github{
     display: none;
   }
 
