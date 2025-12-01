@@ -5,7 +5,7 @@
 }
 
 #main-header {
-  background-color: aquamarine;
+  background-color: rgb(87, 164, 226);
   height: 10vh;
   display: flex;
   align-items: center;
@@ -35,7 +35,7 @@
 
 .main-header-nav-var-contact {
   color: black;
-  background-color: burlywood;
+  background-color: rgb(102, 93, 79);
   padding: 1rem;
   border-radius: 0.5rem;
   text-decoration: none;
@@ -105,7 +105,7 @@
 }
 
 #main-footer {
-  background-color: aquamarine;
+  background-color: rgb(87, 164, 226);
   height: 10vh;
   display: flex;
   align-items: center;
