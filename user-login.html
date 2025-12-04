@@ -19,15 +19,19 @@
   <form id="main-form-user">
     <label for="user-name">Nombre:
       <input type="text" id="user-name" name="user-name">
+      <span id="user-name-error" style="visibility:hidden; color:red">Campo obligatorio</span>
     </label>
     <label for="user-surname">Apellido:
       <input type="text" id="user-surname" name="user-surname">
+      <span id="user-surname-error" style="visibility:hidden; color:red">Campo obligatorio</span>
     </label>
     <label for="user-email">Email:
       <input type="email" id="user-email" name="user-email">
+      <span id="user-email-error" style="visibility:hidden; color:red">Campo obligatorio</span>
     </label>
     <label for="user-phone">Teléfono:
       <input type="number" id="user-phone" name="user-phone">
+      <span id="user-phone-error" style="visibility:hidden; color:red">Campo obligatorio</span>
     </label>
     <input type="submit" title="Enviar">
   </form>
