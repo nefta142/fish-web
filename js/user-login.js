@@ -3,23 +3,16 @@ let users = JSON.parse(localStorage.getItem("users")) || [];
 function showUsers() {
   let aux = "";
   for (let i = 0; i < users.length; i++) {
-    aux += `
-      <li>
-        ${users[i].userName} - ${users[i].userSurname} - ${users[i].userEmail} - ${users[i].userPhone}
-        <button class="edit-btn" data-index="${i}">
-          <i class="bi bi-pencil-square"></i>
-        </button>
-      </li>`;
+    aux += `<li>
+              ${users[i].userName} - ${users[i].userSurname} - ${users[i].userEmail} - ${users[i].userPhone} 
+              <a href="edit-user.html?index=${i}" class="edit-user"><i class="bi bi-pencil-square"></i></a>
+            </li>`;
   }
-
   let usersList = document.getElementById("users-list");
   if (usersList) {
     usersList.innerHTML = aux;
   }
-
-  attachEditEvents();
 }
-
 
 function listenToEvents() {
   let loginForm = document.getElementById("main-form-user");
@@ -27,6 +20,8 @@ function listenToEvents() {
 }
 
 function validateUserForm(event) {
+  event.preventDefault();
+
   let userName = event.target["user-name"].value.trim();
   let userSurname = event.target["user-surname"].value.trim();
   let userEmail = event.target["user-email"].value.trim();
@@ -62,22 +57,16 @@ function validateUserForm(event) {
     document.getElementById("user-phone-error").style.visibility = "hidden";
   }
 
-  if (error) {
-    event.preventDefault();
-    return;
+  if (!error) {
+    addUserToArray(event);
   }
-
-  // Si no hay errores → agregar usuario
-  addUserToArray(event);
 }
 
 function addUserToArray(event) {
-  event.preventDefault();
-
-  let userName = event.target["user-name"].value;
-  let userSurname = event.target["user-surname"].value;
-  let userEmail = event.target["user-email"].value;
-  let userPhone = event.target["user-phone"].value;
+  let userName = event.target["user-name"].value.trim();
+  let userSurname = event.target["user-surname"].value.trim();
+  let userEmail = event.target["user-email"].value.trim();
+  let userPhone = event.target["user-phone"].value.trim();
 
   let newUser = {
     userName,
@@ -95,4 +84,3 @@ function addUserToArray(event) {
 
 listenToEvents();
 showUsers();
-
