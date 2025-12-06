@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar usuarios</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar usuarios</title>
+  <link rel="stylesheet" href="./css/style-update.css">
 </head>
+
 <body>
-    <link src="./js/user-update.js">
+  <header class="main-header">
+    <a href="./user-login.html">
+      <i class="bi bi-arrow-left-circle"></i>
+    </a>
+  </header>
+
+  <form id="edit-form-user">
+    <h2>Editar Usuario</h2>
+
+    <label>Nombre:
+      <input type="text" name="user-name">
+      <span id="user-name-error" style="color:red; visibility:hidden;">Campo obligatorio</span>
+    </label>
+
+    <label>Apellido:
+      <input type="text" name="user-surname">
+      <span id="user-surname-error" style="color:red; visibility:hidden;">Campo obligatorio</span>
+    </label>
+
+    <label>Email:
+      <input type="email" name="user-email">
+      <span id="user-email-error" style="color:red; visibility:hidden;">Campo obligatorio</span>
+    </label>
+
+    <label>Teléfono:
+      <input type="text" name="user-phone">
+      <span id="user-phone-error" style="color:red; visibility:hidden;">Campo obligatorio</span>
+    </label>
+
+    <input type="submit" value="Guardar Cambios">
+  </form>
+
+  <script src="./js/user-update.js"> </script>
 </body>
+
 </html>
