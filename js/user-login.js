@@ -5,13 +5,27 @@ function showUsers() {
   for (let i = 0; i < users.length; i++) {
     aux += `<li>
               ${users[i].userName} - ${users[i].userSurname} - ${users[i].userEmail} - ${users[i].userPhone} 
-              <a href="edit-user.html?index=${i}" class="edit-user"><i class="bi bi-pencil-square"></i></a>
+                <div class="user-actions">
+                  <a href="edit-user.html?index=${i}" class="edit-user">
+                    <i class="bi bi-pencil-square"></i>
+                  </a>
+
+                  <button class="delete-btn" onclick="deleteUser(${i})">
+                    <i class="bi bi-trash3-fill"></i>
+                  </button>
+                </div>
             </li>`;
   }
   let usersList = document.getElementById("users-list");
   if (usersList) {
     usersList.innerHTML = aux;
   }
+}
+
+function deleteUser(index) {
+  users.splice(index, 1);
+  localStorage.setItem("users", JSON.stringify(users));
+  showUsers();
 }
 
 function listenToEvents() {

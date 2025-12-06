@@ -114,6 +114,37 @@ body {
   flex-direction: column;
   gap: 0.3rem;
   transition: transform .2s ease, box-shadow .2s ease;
+  
+}
+
+.user-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.edit-user {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.edit-user:hover {
+  color: #0047ff;
+}
+
+.delete-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.6rem;
+  margin-left: 1rem;
+}
+
+.delete-btn i {
+  color: red;
 }
 
 #users-list li:hover {
